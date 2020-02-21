@@ -1,1 +1,97 @@
-This side is under construction
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Theater zur blauen Stunde
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Open+Sans|Roboto:900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/CSS/burger.css">
+    <link rel="stylesheet" href="assets/CSS/text-flex.css">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+</head>
+
+<body>
+    <div class="flex flex-align-center">
+
+        <h1 class="start">Theater zur blauen Stunde e.V.</h1>
+    </div>
+    <header>
+
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <div class="hidetext"></div>
+            <ul>
+                <li><a href="/">start</a></li>
+                <li><a href="01_ueber_uns.html">über uns</a></li>
+                <li><a href="02_aus-der-asche.html">Aus der Asche - eine Feueroper</a></li>
+                <li><a href="03_kontakt.html">kontakt</a></li>
+                <li><a href="04_datenschutz.html">datenschutzerklärung</a></li>
+                <li><a href="05_impressum.html">impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="start flex flex-justify-center flex-align-center">
+            <div class="overlay"></div>
+            <div class="logo-grp flex flex-column flex-align-center flex-justify-center">
+                <img class="logo" alt="Theater zur blauen Stunde (Logo)"
+                     src="assets/img/logo/F_Segno_Siegel-des-Laufs-der-Welt@512.png"
+                     srcset="assets/img/logo/F_Segno_Siegel-des-Laufs-der-Welt@1k.png 2x, assets/img/logo/F_Segno_Siegel-des-Laufs-der-Welt@2k.png 4x">
+                <div class="cta-btns flex flex-column">
+                    <a href="02_aus-der-asche.html" class="btn text-uppercase text-c">Trailer ansehen</a>
+                    <a href="01_ueber_uns.html" class="btn text-uppercase text-c">Wer wir sind</a>
+                </div>
+            </div>
+
+        </div>
+        <img class="vid-placeholder" src="assets/img/fotos/Zeus-Hera_LQ.jpg">
+    
+
+        <video playsinline autoplay muted loop poster="assets/img/fotos/Zeus-Hera.jpg" id="bgvid" class="desktop">
+            <!--MOBILE-->
+            <source src="assets/videos/Zeus-Hera_Snippet_480p_mobile.mp4" type="video/mp4" media="(max-width:480px)">
+            <!--DESKTOP-->
+            <source src="assets/videos/Zeus-Hera_Snippet_1080p_mobile.mp4" type="video/mp4" media="(min-width:1024px)">-->
+        </video>
+
+
+    </main>
+    <footer class="flex flex-column flex-align-center fixed">
+        <div class="icon-bar">
+            <a target="_blank" tag="fb-social-icon" href="">
+                <img class="social-icons" title="facebook-social-icon" alt="facebook-social-icon" src="assets/img/facebook/f_logo_RGB-White_72.png">
+            </a>
+            <a target="_blank" tag="yt-social-icon" href="">
+                <img class="social-icons" title="youtube-social-icon" alt="youtube-social-icon" src="assets/img/youtube/yt_icon_mono_dark.png">
+            </a>
+            <a target="_blank" tag="ig-social-icon" href="">
+                <img class="social-icons" title="instagram-social-icon" alt="instagram-social-icon" src="assets/img/instagram/IG_Glyph_white.png">
+            </a>
+        </div>
+        <div class="imprint flex flex-row flex-justify-center text-uppercase text-letterspace flex-wrap">
+            <div class="flex flex-row flex-wrap">
+                <p class="anschrift">Theater zur blauen Stunde e.V. <span class="text-lowercase">c/o</span> Julian Allescher</p>
+                <p class="anschrift">Kiefholzstraße 188</p>
+                <p class="anschrift">12437 Berlin</p>
+            </div>
+            <div class="flex flex-row flex-wrap">
+                <p><a href="mailto:feuertheater.berlin@gmail.com">feuertheater.berlin@gmail.com</a></p>
+                <p><a href="04_datenschutz.html">Datenschutzerklärung</a></p>
+                <p><a href="05_impressum.html">Impressum</a></p>
+            </div>
+
+
+        </div>
+    </footer>
+</body></html>
