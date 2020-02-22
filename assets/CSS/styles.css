@@ -18,9 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     color: white;
-    background-color: #04184D;
-    
-    /* dunkelblau */
+    background-color: #04184D;/* dunkelblau */
 }
 body.start {
     overflow: hidden;
@@ -68,11 +66,14 @@ div.start div.overlay {
 .cta-btns {
     z-index: 1;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cta-btns a {
     margin: 0 16px 10px;
     width: 150px;
+    font-size: 13px;
 }
 
 .logo-grp {
@@ -356,6 +357,7 @@ p.impressum {
 
     .cta-btns a {
         margin: 0 16px;
+        font-size: 1em;
     }
 
     .body-margin {
