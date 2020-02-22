@@ -201,7 +201,7 @@ div p.anschrift {
 }
 
 h1.start {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 div.imprint div:first-child {
@@ -313,6 +313,10 @@ p.impressum {
 /***** tablet *****/
 
 @media only screen and (min-width: 768px) {
+    h1.start {
+    margin-left: 90px;
+}
+    
     .small-logo {
         width: 70px;
     }
