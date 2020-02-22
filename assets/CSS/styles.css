@@ -107,6 +107,10 @@ img.vid-placeholder {
     z-index: -2;
 }
 
+img.test {
+    height: 100%;
+}
+
 hr {
     border: none;
     width: 100%;
