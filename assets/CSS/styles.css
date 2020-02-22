@@ -19,9 +19,12 @@ body {
     margin: 0;
     color: white;
     background-color: #04184D;
+    
+    /* dunkelblau */
+}
+body.start {
     overflow: hidden;
     height: 100%;
-    /* dunkelblau */
 }
 
 header {
