@@ -46,7 +46,7 @@ footer {
 main {
     position: relative;
     height: 88vh;
-    overflow: hidden
+    overflow: hidden;
 }
 
 div.start {
@@ -104,7 +104,7 @@ video, #either-gif-or-video, img.vid-placeholder {
 
 img.vid-placeholder {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
 
 hr {
