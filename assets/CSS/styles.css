@@ -19,6 +19,8 @@ body {
     margin: 0;
     color: white;
     background-color: #04184D;
+    overflow: hidden;
+    height: 100%;
     /* dunkelblau */
 }
 
@@ -82,7 +84,7 @@ div.start div.overlay {
 .small-logo {
     position: absolute;
     margin-left: 10px;
-    width: 70px;
+    width: 40px;
 }
 
 video {
@@ -302,10 +304,14 @@ p.impressum {
     height: 50px;
 }
 
+
+
 /***** tablet *****/
 
 @media only screen and (min-width: 768px) {
-
+    .small-logo {
+        width: 70px;
+    }
 
     .col-txt {
         min-width: 480px;
@@ -435,6 +441,7 @@ p.impressum {
     p.impressum {
         display: flex;
     }
+
     footer {
         height: 140px;
     }
