@@ -90,8 +90,11 @@ div.start div.overlay {
     margin-left: 10px;
     width: 40px;
 }
+/*** VIDEO ***/
 
-video {
+
+
+video, #either-gif-or-video {
     position: absolute;
     height: 100%;
     width: 100%;
