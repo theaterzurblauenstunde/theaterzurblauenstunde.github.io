@@ -94,7 +94,7 @@ div.start div.overlay {
 
 
 
-video, #either-gif-or-video {
+video, #either-gif-or-video, img.vid-placeholder {
     position: absolute;
     height: 100%;
     width: 100%;
