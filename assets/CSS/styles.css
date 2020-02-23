@@ -3,6 +3,8 @@
     src: url('assets/font/BaarSophia-lg4Z.ttf') format ('truetype');
 }
 
+
+
 .fixed {
     position: fixed;
 }
@@ -15,12 +17,14 @@ body {
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+
     margin: 0;
     color: white;
-    background-color: #04184D;/* dunkelblau */
+    background-color: #04184D;
+    /* dunkelblau */
     z-index: 0;
 }
+
 body.start {
     /**overflow: hidden;**/
     height: 100%;
@@ -85,11 +89,14 @@ div.start {
     margin-left: 10px;
     width: 40px;
 }
+
 /*** VIDEO ***/
 
 
 
-video, .either-gif-or-video, img.vid-placeholder {
+video,
+.either-gif-or-video,
+img.vid-placeholder {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -98,8 +105,7 @@ video, .either-gif-or-video, img.vid-placeholder {
 }
 
 img.vid-placeholder {
-    position: absolute 
-    z-index: -3;
+    position: absolute z-index: -3;
 }
 
 img.test {
@@ -127,7 +133,7 @@ hr {
 
 .body-margin {
     height: 100%;
-    margin: 100px 0 140px 0;
+    margin: 50px 0 140px 0;
     width: 100%;
 }
 
@@ -316,10 +322,14 @@ p.impressum {
 
 @media only screen and (min-width: 768px) {
     h1.start {
-    margin-left: 90px;
-    
-}
-    
+        margin-left: 90px;
+
+    }
+
+    .body-margin {
+        margin: 100px 0 140px 0;
+    }
+
     .small-logo {
         width: 70px;
     }
