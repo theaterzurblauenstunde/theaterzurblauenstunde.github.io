@@ -19,6 +19,7 @@ body {
     margin: 0;
     color: white;
     background-color: #04184D;/* dunkelblau */
+    z-index: 0;
 }
 body.start {
     /**overflow: hidden;**/

@@ -1,5 +1,7 @@
 input#burger {
     opacity: 0%;
+    display: none;
+    z-index:-100;
 }
 
 h1 {
