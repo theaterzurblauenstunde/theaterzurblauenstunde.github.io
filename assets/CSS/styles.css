@@ -61,20 +61,6 @@ div.start {
 }
 
 
-
-.cta-btns {
-    z-index: 1;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cta-btns a {
-    margin: 0 16px 10px;
-    width: 150px;
-    font-size: 13px;
-}
-
 .logo-grp {
     position: absolute;
     z-index: 1;
@@ -187,7 +173,8 @@ article > div {
 
 article section p span {
     font-weight: 600;
-    font-style: italic;
+    text-transform: uppercase;
+
 }
 
 figure {
@@ -363,18 +350,10 @@ p.impressum {
         height: 98vh;
     }
 
-    .cta-btns {
-        flex-direction: row;
-        margin-bottom: 0px;
-    }
+
 
     footer {
         height: 140px;
-    }
-
-    .cta-btns a {
-        margin: 0 16px;
-        font-size: 1em;
     }
 
     .body-margin {
