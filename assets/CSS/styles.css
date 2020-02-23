@@ -61,6 +61,7 @@ div.start div.overlay {
     width: 100%;
     background-color: #04184D;
     opacity: 70%;
+    z-index:-1;
 }
 
 .cta-btns {
@@ -99,12 +100,12 @@ video, .either-gif-or-video, img.vid-placeholder {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 img.vid-placeholder {
     position: absolute;
-    z-index: -2;
+    z-index: -3;
 }
 
 img.test {
