@@ -176,18 +176,21 @@ a:hover {
 /**** BTNS *****/
 
 .cta-btns {
+    height: 102px;
     z-index: 1;
     margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .cta-btns a {
     margin: 0 16px 10px;
-    width: 150px;
-    font-size: 13px;
-}
+    width: 122px;
+    align-content: center;
+    justify-content: center;
+    
+} 
 a.btn,
 button.btn {
     display: inline-block;
@@ -229,9 +232,5 @@ textarea {
         margin-bottom: 0px;
     }
 
-    .cta-btns a {
-        margin: 0 16px;
-        font-size: 1em;
-    }
 
 }
