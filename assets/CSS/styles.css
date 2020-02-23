@@ -55,14 +55,7 @@ div.start {
     width: 100%;
 }
 
-div.start div.overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #04184D;
-    opacity: 0.7;
-    z-index:-1;
-}
+
 
 .cta-btns {
     z-index: 1;
@@ -104,7 +97,7 @@ video, .either-gif-or-video, img.vid-placeholder {
 }
 
 img.vid-placeholder {
-    position: absolute;
+    position: absolute 
     z-index: -3;
 }
 
