@@ -49,7 +49,7 @@ footer {
 }
 
 main {
-    
+
     position: relative;
     height: 88vh;
     overflow: hidden;
@@ -68,7 +68,7 @@ div.start {
 }
 
 .logo {
-    height: 300px;
+    height: 240px;
 }
 
 .small-logo {
@@ -279,16 +279,8 @@ p.impressum {
 }
 
 /**ICON BAR**/
-.icon-bar a {
-    margin: 15px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-}
 
-.icon-bar a img {
-    width: 30px;
-}
+
 
 .icon-bar {
     display: flex;
@@ -297,13 +289,53 @@ p.impressum {
     height: 50px;
 }
 
+.icon-bar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
 
+.icon-bar a {
+    padding: 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-bar a img {
+    width: 30px;
+    z-index: 10;
+}
+
+.icon-bar a img.gold {
+    position: absolute;
+    opacity: 0.0;
+    z-index: 12;
+}
+
+.flame-hover {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    z-index: -2;
+    opacity: 0.0;
+}
+
+.icon-bar div:hover > .flame-hover {
+    opacity: 1.0;
+}
+
+.icon-bar div:hover img.gold {
+    opacity: 1.0;
+    transition: 0.5s;
+}
 
 /***** tablet *****/
 
 @media only screen and (min-width: 768px) {
     h1.start {
-        margin-left: 90px;
+        margin-left: 30px;
 
     }
 
@@ -388,17 +420,28 @@ p.impressum {
     }
 
     /**ICON BAR**/
+    .icon-bar {
+        height: 90px;
+    }
+
+    .icon-bar div {
+        width: 90px;
+    }
+
     .icon-bar a {
-        margin: 15px;
+        padding: 15px;
         height: 60px;
     }
 
     .icon-bar a img {
         width: 60px;
+ 
     }
 
-    .icon-bar {
-        height: 90px;
+    .flame-hover {
+        position: absolute;
+        height: 100px;
+        width: 100px;
     }
 
 }
