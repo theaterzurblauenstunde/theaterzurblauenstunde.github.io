@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'BaarSophia';
+    src: url('assets/font/BaarSophia-lg4Z.ttf') format ('truetype');
+}
+
+h3 {
+    margin:inherit;
+}
+.text-l {
+    text-align: left;
+}
+.text-r {
+    text-align: right;
+}
+.text-c {
+    text-align: center;
+}
+.text-block {
+    text-align: justify;
+}
+.text-bold {
+    font-weight: bold;/* normal -> keine Fette  */
+}
+.text-light {
+    font-weight: lighter;/* normal -> keine Fette  */
+}
+.text-italic {
+    font-style: italic;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.text-overline {
+    text-decoration: overline;
+}
+.text-linetrough {
+    text-decoration: line-through;
+}
+.text-wordspace {
+    word-spacing: 10px;
+}
+.text-letterspace {
+    letter-spacing: 0.3px;
+}
+.text-lineheight {
+    line-height: 22px;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-firstletter::first-line {
+    color: red;
+    font-size: 36px;
+}
+.text-firstline::first-line {
+    font-weight: 900;
+}
+
+.corner-all {
+    border-radius: 4px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-clear-both {
+    clear: both;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-row-rev {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-justify-evenly {
+    justify-content: space-evenly;
+}
+.flex-justify-between {
+    justify-content: space-between;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-justify-end {
+    justify-content: flex-end;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-align-start {
+    align-items: flex-start;
+}
+.flex-align-end {
+    align-items: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap
+}
+.flex-nowrap {
+    flex-wrap: nowrap
+}

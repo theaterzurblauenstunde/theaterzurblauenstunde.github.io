@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'BaarSophia';
+    src: url('assets/font/BaarSophia-lg4Z.ttf') format ('truetype');
+}
+
+.fixed {
+    position: fixed;
+}
+
+html,
+body {
+    /*height: 100%;*/
+    position: relative;
+}
+
+h2 {margin-bottom: 0px;}
+h3 {
+    margin-top: 13px;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
+body {
+    font-size: 13px;
+}
+ul.inhaltsverzeichnis {
+    font-size: 16px;
+}
+
+body main header {
+    text-align: center;
+}
+
+header img.banner {
+    width: 100%;
+}
+
+header img.title {
+    max-width: 90%;
+    margin: 0px 10px;
+}
+
+body main section {
+    justify-content: center;
+}
+
+body main > section {
+    margin: 0px 20px 0px 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: black;
+    background-color: #04184D;
+    /* dunkelblau */
+}
+
+hr {
+    width: 100%;
+    border: 0px;
+    height: 2px;
+    background-color: pink;
+}
+
+/*** GALLERY ***/
+
+section.gallery figure {
+    /*border: 1px solid blue;*/ /*DEBUG*/
+    color: gray;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+}
+
+section.gallery.gal-size-3 figure {
+    width: 166px;
+}
+
+section.gallery.gal-size-2 figure {
+    width: 240px;
+}
+
+section.gallery figure img {
+    width: 100%;
+}
+
+.object-fit-cover {
+    height: 120px;
+    object-fit: cover;
+}
+.rotate-90 {
+    transform: rotate(90deg)
+}
+
+/** Play Button **/
+section figure a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+div.darken {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+section figure a:hover div.darken {
+    opacity: .4;
+    transition: 0.4s;
+}
+
+div.gold {
+    opacity: 0;
+}
+section figure a:hover div.gold {
+    opacity: 1;
+    transition: 0.4s;
+}
+div.play {
+    position: absolute;
+    width: 80px;
+    z-index: 10;
+    height: 80px;
+    
+}
+div.play img {
+    height: 100%;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.object-fit-height{
+    height: 150px;
+}
+
+/*** BUTTONS ***/
+section.button {
+    padding: 10px;
+}
+
+section.button a {
+    font-weight: bold;
+    padding: 5px 15px;
+    display: inline-block;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    letter-spacing: 1px;
+    color: black;
+    background: lightpink;
+}
+
+.musicbtn {
+    margin: 0px -16px;
+}
+
+.musicbtn > a {
+    font-size: 0.6rem;
+    margin: 0px 4px;
+    width: 160px;
+    text-align: center;
+}
+
+
+section.button a:hover {
+    color: white;
+    background-color: #270B63;
+    border-color: white;
+}
+
+
+a.btn,
+button.btn {}
+
+
+/*** LINKS ***/
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+/************************   MEDIA QUERIES    ***********************/
+/* mobile */
+
+header img.title {
+    max-width: 90%;
+    margin: 0px 10px;
+}
+
+body main {
+    width: 100%;
+    background-color: rgb(255, 246, 217);
+    margin: 10px;
+}
+
+section.gallery {
+    /**border: 1px solid red;**/ /***DEBUG**/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.gallery.gal-size-3 figure,
+section.gallery.gal-size-2 figure {
+    width: 300px;
+}
+
+section.gallery figure {
+    margin: 0px 0px 10px 0px;
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+    header img.title {
+        max-width: 100%;
+        margin: 0px 0px;
+    }
+
+    body main {
+        width: 600px;
+    }
+
+    section.gallery {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    section.gallery.gal-size-3 figure {
+        width: 166px;
+    }
+
+    section.gallery.gal-size-2 figure {
+        width: 240px;
+    }
+
+    section.gallery figure {
+        margin: 0px;
+    }
+
+    /* Desktop */
+
+    @media only screen and (min-width: 1024px) {
+    }
