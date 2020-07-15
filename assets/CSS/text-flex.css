@@ -149,6 +149,9 @@ a:hover {
     justify-content: center;
 }
 
+.flex-justify-between {
+    justify-content: space-between;
+}
 .flex-justify-end {
     justify-content: flex-end;
 }

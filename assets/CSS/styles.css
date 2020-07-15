@@ -3,8 +3,6 @@
     src: url('assets/font/BaarSophia-lg4Z.ttf') format ('truetype');
 }
 
-
-
 .fixed {
     position: fixed;
 }
@@ -135,7 +133,10 @@ hr {
     font-size: 11px;
 }
 
-
+section {
+    padding: 0px;
+    margin: 0px;
+}
 article {
     min-width: 300px;
     max-width: 1200px;
@@ -150,6 +151,25 @@ article > div {
     /***DEBUG***/
     width: 40%;
     margin: 20px 20px;
+}
+
+article > div.width-full {
+    /*border: 1px solid red; */
+    /***DEBUG***/
+    margin: 20px 0px;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.col-imprint {
+    width: 380px;
+    margin: 0 20px;
+}
+
+.col-imprint > h3 {
+    margin: 0 20px;
 }
 
 .col-img {
@@ -208,9 +228,8 @@ main.contact article p {
 
 main.contact article {
     min-width: 280px;
-    max-width: 768px;
     width: 100%;
-    margin: 0 20px;
+    margin: 0px;
 }
 
 main article.contact span,
@@ -435,7 +454,7 @@ p.impressum {
 
     .icon-bar a img {
         width: 60px;
- 
+
     }
 
     .flame-hover {
@@ -456,6 +475,10 @@ p.impressum {
     .col-txt {
         min-width: 480px;
         width: 40%
+    }
+
+    .col-imprint {
+        width: 440px;
     }
 
     div.col-img {
