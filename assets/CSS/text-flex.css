@@ -212,6 +212,10 @@ button.btn {
     font-weight: bold;
 }
 
+a.btn-highlight {
+    background: lightgreen;
+}
+
 a.btn:hover,
 button.btn:hover {
     transition: background 1s;
