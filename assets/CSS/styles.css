@@ -239,14 +239,12 @@ p.anschrift {
 }
 
 /***********      KONTAKT SEITE       ***********/
-/*main.contact article p {
+main.contact article p {
     margin: 20px;
-}*/
+}
 
 main.contact article {
-    min-width: 0px;
-    width: 100%;
-    margin: 0px;
+    min-width: 280px;
 }
 
 main article.contact span,
@@ -255,6 +253,11 @@ a span {
 }
 
 section.video-bg {}
+
+main.contact {
+    width: auto;
+}
+
 
 /******************************** forms *******************************/
 
