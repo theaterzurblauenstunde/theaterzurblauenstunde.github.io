@@ -25,6 +25,12 @@ h3 {
     margin: inherit;
 }
 
+.ticket-col > h3 {
+    margin: 0px;
+}
+p.datum {
+    font-size: 12px;
+}
 .text-l {
     text-align: left;
 }

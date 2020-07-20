@@ -108,8 +108,9 @@ hr {
 
 
 
+
 .container {
-    min-width: 320px;
+    /**min-width: 280px;**/
     width: 100%;
     max-width: 990px;
     height: 100%;
@@ -156,7 +157,23 @@ article > div {
 article > div.width-full {
     /*border: 1px solid red; */
     /***DEBUG***/
-    margin: 20px 0px;
+    margin: 0px 0px;
+}
+
+main >  article.tickets {
+    padding: 0 20px;
+}
+
+div.tickets div div.container{
+    max-width: 400px;
+}
+
+.ticket-col {
+    margin: 0px 0px;
+    width: 100%;
+}
+.ticket-col .ticket-col:first-of-type{
+    width: 100%;
 }
 
 .width-full {
@@ -222,12 +239,12 @@ p.anschrift {
 }
 
 /***********      KONTAKT SEITE       ***********/
-main.contact article p {
+/*main.contact article p {
     margin: 20px;
-}
+}*/
 
 main.contact article {
-    min-width: 280px;
+    min-width: 0px;
     width: 100%;
     margin: 0px;
 }
@@ -366,6 +383,10 @@ p.impressum {
         width: 70px;
     }
 
+    .ticket-col {
+    margin: 0px 0px;
+    width: 50%;
+}
     .col-txt {
         min-width: 480px;
         width: 100%

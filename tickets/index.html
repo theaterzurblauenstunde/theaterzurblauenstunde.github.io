@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/CSS/burger.css">
     <link rel="stylesheet" href="../assets/CSS/text-flex.css">
     <link rel="stylesheet" href="../assets/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Muli|Quicksand|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
 
@@ -42,7 +43,7 @@
             </a>
         </div>
         <div>
-            <h1>Kontakt</h1>
+            <h1>Tickets</h1>
         </div>
     </div>
     <header>
@@ -69,60 +70,78 @@
             </ul>
         </nav>
     </header>
-    <main class="contact body-margin flex flex-column flex-align-center" flex-justify-center>
-        <article class="contact">
-            <div class="container">
-                <p>Du möchtest gerne Mitglied in unserem Verein werden?
-                    <br>Oder hättest du gerne eine Feuershow auf deiner eigenen Veranstaltung?
-                    <br>Oder möchtest du einfach Kritik, Lob oder deinen Hass loswerden?
-                    <br><span>Wir freuen uns auf deine Nachricht!</span></p>
+    <main class="body-margin flex flex-column flex-align-center" flex-justify-center>
+        <article class="tickets flex flex-column flex-align-center">
+            <div class="container flex flex-row flex-wrap flex-justify-between">
+                <div class="ticket-col">
+                    <h3>Aus der Asche - eine Feueroper (Premiere)</h3>
+                    20-23 Uhr (Einlass 19 Uhr)<br>
+                    📍 Abenteuerzentrum Grunewald
+                </div>
+                <div class="ticket-col flex flex-row flex-justify-between">
+                    <div class="ticket-col flex flex-align-center">
+                        <p class="datum">Samstag, 29.August 2020</p>
+                    </div>
+                    <div class="ticket-col flex flex-column flex-justify-center flex-align-end">
+                        <div><a target="_blank" class="btn text-uppercase" tag="tickets" href="https://pretix.eu/blauestunde/ausderasche-2908/"><i class="fa fa-ticket"></i> Tickets</a></div>
+                    </div>
+                </div>
             </div>
+            <hr>
+            <div class="container flex flex-row flex-wrap flex-justify-between">
+                <div class="ticket-col">
+                    <h3>Aus der Asche - eine Feueroper</h3>
+                    20-23 Uhr (Einlass 19 Uhr)<br>
+                    📍 Abenteuerzentrum Grunewald
+                </div>
+                <div class="ticket-col flex flex-row flex-justify-between">
+                    <div class="ticket-col flex flex-align-center">
+                        <p class="datum">Sonntag, 30.August 2020</p>
+                    </div>
+                    <div class="ticket-col flex flex-column flex-justify-center flex-align-end">
+                        <div><a target="_blank" class="btn text-uppercase" tag="tickets" href="https://pretix.eu/blauestunde/ausderasche-2908/"><i class="fa fa-ticket"></i> Tickets</a></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container flex flex-row flex-wrap flex-justify-between">
+                <div class="ticket-col">
+                    <h3>Aus der Asche - eine Feueroper</h3>
+                    19-22 Uhr (Einlass 18 Uhr)<br>
+                    📍 Freiluftkino Friedrichshagen
+                </div>
+                <div class="ticket-col flex flex-row flex-justify-between">
+                    <div class="ticket-col flex flex-align-center">
+                        <p class="datum">Samstag, 26.September 2020</p>
+                    </div>
+                    <div class="ticket-col flex flex-column flex-justify-center flex-align-end">
+                        <div><a target="_blank" class="btn text-uppercase" tag="tickets" href="https://www.kino-union.de/ticket?l=https%3A%2F%2Fbooking.cinetixx.de%2Ffrontend%2Findex.html%3FcinemaId%3D1538288592%26showId%3D2296331873%26bgswitch%3Dfalse"><i class="fa fa-ticket"></i> Tickets</a></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container flex flex-row flex-wrap flex-justify-between">
+                <div class="ticket-col">
+                    <h3>Aus der Asche - eine Feueroper (Letzte Aufführung)</h3>
+                    19-22 Uhr (Einlass 18 Uhr)<br>
+                    📍 Freilufktino Friedrichshagen
+                </div>
+                <div class="ticket-col flex flex-row flex-justify-between">
+                    <div class="ticket-col flex flex-align-center">
+                        <p class="datum">Sonntag, 27.September 2020</p>
+                    </div>
+                    <div class="ticket-col flex flex-column flex-justify-center flex-align-end">
+                        <div><a target="_blank" class="btn text-uppercase" tag="tickets" href="https://www.kino-union.de/ticket?l=https%3A%2F%2Fbooking.cinetixx.de%2Ffrontend%2Findex.html%3FcinemaId%3D1538288592%26showId%3D2296331881%26bgswitch%3Dfalse"><i class="fa fa-ticket"></i> Tickets</a></div>
+                    </div>
+                </div>
+            </div>
+
 
         </article>
 
-        <!--<article class="form">
-            <form autocomplete="off" method="get" action="https://cimdata.bckhs.com/formcheck.php">
 
 
-                <div class="eventtime flex flex-column flex-justify-start">
-                    <label>Art der Anfrage
-                        <select name="anfrage[]">
-                            <option value="buchung" selected>Buchungsanfrage</option>
-                            <option value="mitgliedsantrag">Mitgliedsantrag stellen</option>
-                            <option value="kritik">Lob, Kritik, Anregungen</option>
-                            <option value="sonstiges">Sonstiges</option>
-                        </select>
-                    </label>
-                    <label>Veranstaltungsdatum <input type="date" name="eventdate"></label>
-                    <label>Veranstaltungszeit <input type="time" name="eventtime"></label>
 
-                </div>
-
-                <label>Betreff <input type="" name="subject" placeholder="Bsp.: Feuershow auf Hochzeitsfeier"></label>
-
-                <div class="namefields flex flex-column flex-justify-start">
-                    <label>Vorname <input type="text" name="firstname"></label>
-                    <label>Nachname <input type="text" name="lastname"></label>
-                    <label>E-Mail <input type="email" name="emailaddress" required></label>
-                </div>
-
-
-                <label>Nachricht <textarea id="message" name="message" rows="8"></textarea></label>
-
-                <div class="flex flex-row-rev"><button class="btn text-uppercase">Abschicken</button>
-                </div>
-            </form>
-        </article>-->
-
-        <article class="socialmedia">
-            <div class="container">
-                <p>Schreibe uns gerne unter: <br><a href="mail@blauestunde.theater"><span>mail@blauestunde.theater</span></a>
-                    <br>
-                    <br>Oder statte unseren sozialen Kanälen doch mal einen Besuch ab!<br>
-                    Mögen die Flammen euch gewogen sein!</p>
-            </div>
-
-        </article>
         <hr>
     </main>
     <footer class="flex flex-column flex-align-center">
