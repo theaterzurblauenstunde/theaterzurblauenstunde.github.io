@@ -216,6 +216,10 @@ a.btn-highlight {
     background: lightgreen;
 }
 
+.btn-row a.btn {
+    margin: 0 0 0 20px;
+}
+
 a.btn:hover,
 button.btn:hover {
     transition: background 1s;
