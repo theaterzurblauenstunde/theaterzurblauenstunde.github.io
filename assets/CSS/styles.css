@@ -146,6 +146,12 @@ article {
     background: linear-gradient(00deg, rgba(3, 20, 65, 0.6) 0%, rgba(4, 24, 77, 1) 100%);
 
 }
+.daten {
+    width: inherit;
+}
+article.daten {
+    padding: 20px 40px 40px 40px;
+}
 
 article > div {
     /*border: 1px solid red; */
