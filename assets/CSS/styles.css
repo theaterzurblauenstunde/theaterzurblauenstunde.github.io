@@ -82,6 +82,23 @@ div.start {
     width: 40px;
 }
 
+#top-img .container{
+    max-width: 800px;
+    position: relative;
+}
+
+#top-img .container img {
+    width: 100%;
+}
+
+#top-img a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+    
 /*** VIDEO ***/
 
 
