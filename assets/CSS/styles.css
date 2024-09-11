@@ -82,7 +82,7 @@ div.start {
 }
 
 .small-logo img {
-    width: 70px;
+    width: 40px;
 }
 
 
@@ -428,7 +428,7 @@ p.impressum {
         margin: 100px 0 140px 0;
     }
 
-    .small-logo {
+    .small-logo img {
         width: 70px;
     }
 
