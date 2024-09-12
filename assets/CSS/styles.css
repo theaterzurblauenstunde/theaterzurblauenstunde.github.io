@@ -103,6 +103,7 @@ div.start {
     
 }
 
+
 #banner .banner img {
     height: 100%;
     width: 100%;
@@ -210,6 +211,7 @@ article > div.width-full {
 
 main >  article.tickets {
     padding: 0 20px;
+    max-width: 400px;
 }
 
 div.tickets div div.container{
@@ -506,6 +508,13 @@ p.impressum {
 
     .imprint p {
         margin: 0px 20px;
+    }
+
+    main >  article.tickets {
+        padding: 0 20px;
+        margin: 0 20px;
+        width: 728px;
+        max-width: 728px;
     }
 
     /**ICON BAR**/
