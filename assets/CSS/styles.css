@@ -39,6 +39,7 @@ body.start {
 
 
 
+
 footer {
     position: absolute;
     right: 0;
@@ -69,6 +70,7 @@ div.start {
 .logo-grp {
     position: absolute;
     z-index: 1;
+    margin-bottom: 120px;
 }
 
 .logo {
@@ -517,6 +519,12 @@ p.impressum {
         max-width: 728px;
     }
 
+    .logo-grp {
+        position: absolute;
+        z-index: 1;
+        margin-bottom: 280px;
+    }
+
     /**ICON BAR**/
     .icon-bar {
         height: 90px;
@@ -584,6 +592,12 @@ p.impressum {
 
     footer {
         height: 140px;
+    }
+
+    .logo-grp {
+        position: absolute;
+        z-index: 1;
+        margin-bottom: 240px;
     }
 
 }
