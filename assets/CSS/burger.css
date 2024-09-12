@@ -208,6 +208,10 @@ body nav ul {
 
     }
 
+    body input ~ nav > ul {
+        top: 10%;
+    }
+
     /****** Nav Background  Color ******/
     body input ~ nav {}
 
