@@ -259,6 +259,10 @@ div.tickets div div.container{
     background-color: #060615;
     padding: 40px 20px;
 }
+
+article.contact {
+    background: #060615;
+}
 .feature-card {
     max-width: 270px;
     padding: 20px;
@@ -303,7 +307,7 @@ p.anschrift {
 
 /***********      KONTAKT SEITE       ***********/
 main.contact article p {
-    margin: 20px;
+    margin: 0px;
 }
 
 main.contact article {
