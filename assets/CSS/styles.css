@@ -260,7 +260,7 @@ div.tickets div div.container{
     padding: 40px 20px;
 }
 
-article.contact {
+article.special {
     background: #060615;
 }
 .feature-card {
@@ -307,7 +307,7 @@ p.anschrift {
 
 /***********      KONTAKT SEITE       ***********/
 main.contact article p {
-    margin: 0px;
+    margin: 20px;
 }
 
 main.contact article {
