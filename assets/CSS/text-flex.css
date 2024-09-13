@@ -7,7 +7,7 @@
 body {
     /**font-family: 'Open Sans', sans-serif;**/
     font-family: 'Muli', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0px;
     word-spacing: 0.3px;
     line-height: 20px;
@@ -175,11 +175,11 @@ a:hover {
 }
 
 .flex-wrap {
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .flex-nowrap {
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 
 /**** BTNS *****/
@@ -205,19 +205,29 @@ button.btn {
     display: inline-block;
     color: black;
     background: lightpink;
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
-    padding: 10px 15px;
+    border-radius: 40px;
+    padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+a.btn i {
+    margin: 0 4px 0 0;
+}
 a.btn-highlight {
     background: lightgreen;
 }
 
 .btn-row a.btn {
-    margin: 0 0 0 20px;
+    margin: 20px 0 0 20px;
+}
+.btn-row {
+    flex-wrap: wrap;
 }
 
 a.btn:hover,
