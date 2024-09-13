@@ -189,7 +189,7 @@ article {
     /*border: 1px solid yellow;*/
     /*** DEBUG **/
     background: linear-gradient(00deg, rgba(3, 20, 65, 0.6) 0%, rgba(4, 24, 77, 1) 100%);
-
+    padding: 20px 0px;
 }
 .daten {
     width: inherit;
@@ -252,6 +252,19 @@ div.tickets div div.container{
 
 .col-img img {
     width: 100%;
+}
+
+.features {
+    width: 100%;
+    background-color: #060615;
+    padding: 40px 20px;
+}
+.feature-card {
+    max-width: 270px;
+    padding: 20px;
+}
+.feature-card img, .feature-card .col-txt {
+    max-width: 270px;
 }
 
 article section p span {
@@ -524,6 +537,9 @@ p.impressum {
         z-index: 1;
         margin-bottom: 280px;
     }
+
+    
+
 
     /**ICON BAR**/
     .icon-bar {
