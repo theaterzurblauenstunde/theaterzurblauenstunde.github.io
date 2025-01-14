@@ -171,7 +171,7 @@ hr {
 
 
 .imprint {
-    height: 20px;
+    height: 24px;
     margin-top: 4px;
 }
 
@@ -393,26 +393,26 @@ p.impressum {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 60px;
 }
 
 .icon-bar div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 60px;
 }
 
 .icon-bar a {
-    padding: 15px;
-    height: 30px;
+    padding: 8px;
+    height: 36px;
     display: flex;
     align-items: center;
 }
 
 .social-icons {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     z-index: 10;
 }
 
@@ -424,8 +424,8 @@ p.impressum {
 
 .flame-hover {
     position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     z-index: -2;
     opacity: 0.0;
 }
