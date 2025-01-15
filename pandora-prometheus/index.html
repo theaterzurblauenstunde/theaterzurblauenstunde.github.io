@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" 
+            content="Das Theater zur blauen Stunde begeistert mit Feuertheater, Musik, Tanz und Akrobatik. Wir vereinen verschiedene Kunstformen in einzigartigen Aufführungen.
+            Erleben Sie unser neues Stück Pandora & Prometheus, das Feuer, Musik- und Tanztheater auf spektakuläre Weise kombiniert.">
+
+
     <title>
         Theater zur blauen Stunde
     </title>
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Open+Sans|Roboto:900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/CSS/burger.css">
     <link rel="stylesheet" href="../assets/CSS/text-flex.css">
     <link rel="stylesheet" href="../assets/CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Muli|Quicksand|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="57x57" href="../segno.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../segno.ico/apple-icon-60x60.png">
@@ -39,7 +46,8 @@
     <div class="flex flex-align-center">
         <div class="small-logo">
             <a href="/">
-                <img src="../assets/img/logo/TZBS_Logo-Initialen.svg">
+                <img src="../assets/img/logo/TZBS_Logo-Initialen.svg"
+                     alt="Logo des Theaters zur blauen Stunde mit den Buchstaben TZBS">
             </a>
         </div>
         <div>
@@ -83,7 +91,11 @@
             <section id="banner">
                 <div class="banner flex flex-column flex-align-center">
 
-                        <img src="../assets/img/fotos/Pandora-und-Prometheus_4320x1800.jpg" title="Pandora und Prometheus Artwork breit" alt="Pandora und Prometheus Artwork breit">
+                        <img src="../assets/img/fotos/Pandora-und-Prometheus_4320x1800-1x.webp"
+                             title="Pandora und Prometheus Artwork breit"
+                             alt="Pandora und Prometheus Artwork breit"
+                             srcset="../assets/img/fotos/Pandora-und-Prometheus_4320x1800-1x.webp 768w,
+                                     ../assets/img/fotos/Pandora-und-Prometheus_4320x1800-2x.webp 1280w">
 
                 </div>
             </section>
@@ -104,7 +116,11 @@
             
             <article class="flex flex-row flex-align-start flex-justify-center flex-wrap">
                 <div class="col-img">
-                    <img title="Pandora und Prometheus Artwork" alt="Pandora und Prometheus Artwork" src="../assets/img/fotos/Pandora-und-Prometheus_square-20251920.jpg">
+                    <img title="Pandora und Prometheus Artwork"
+                         alt="Pandora und Prometheus Artwork"
+                         src="../assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp"
+                         srcet="../assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp 768w,
+                                ../assets/img/fotos/Pandora-und-Prometheus_square-20251920-2x.webp 1280w">
                 </div>
                 <div class="col-txt">
                     <section>
@@ -124,7 +140,11 @@
             <article class="flex flex-row-rev flex-align-start flex-justify-center flex-wrap">
                 <div class="col-img flex flex-wrap flex-justify-evenly">
                     <figure class="col-img">
-                        <img title="Apollon und Muse" alt="Apollon und Muse" src="../assets/img/fotos/apollon-muse.jpg">
+                        <img title="Apollon und Muse"
+                             alt="Apollon und Muse"
+                             src="../assets/img/fotos/apollon-muse-1x.webp"
+                             srcset="../assets/img/fotos/apollon-muse-1x.webp 768w
+                                     ../assets/img/fotos/apollon-muse-2x.webp 1280w">
                         <figcaption>Apollon und die Muse Kalliope </figcaption>
                     </figure>
                     <!--<figure class="col-img">
@@ -152,11 +172,21 @@
             <article class="flex flex-row flex-justify-evenly flex-wrap flex-align-center">
                 <div class="col-img flex flex-wrap flex-justify-evenly">
                     <figure class="col-img">
-                        <img title="Neugier" alt="Neugier" src="../assets/img/fotos/neugier.jpg">
+                        <img title="Neugier"
+                             alt="Neugier"
+                             src="../assets/img/fotos/neugier-1x.webp"
+                             srcset="../assets/img/fotos/neugier-1x.webp 768w
+                                     ../assets/img/fotos/neugier-2x.webp 1280w"
+                             >
                         <figcaption>Die Menschen entdecken das Feuer</figcaption>
                     </figure>
                     <figure class="col-img">
-                        <img title="Pandora und Prometheus" alt="Pandora und Prometheus" src="../assets/img/fotos/pandora-prometheus.jpg" style="transform: scalex(1)">
+                        <img title="Pandora und Prometheus"
+                             alt="Pandora und Prometheus"
+                             src="../assets/img/fotos/pandora-prometheus-1x.webp"
+                             srcset="../assets/img/fotos/pandora-prometheus-1x.webp 768w
+                                     ../assets/img/fotos/pandora-prometheus-2x.webp 1280w"
+                             style="transform: scalex(1)">
                         <figcaption>Noch lachen Pandora und Prometheus über die olympischen Gottheiten</figcaption>
                     </figure>
                 </div>
@@ -172,34 +202,32 @@
             <div class="icon">
                 <img class="flame-hover tg" alt="flame-hover" src="../assets/img/gifs/Flamme_Icon_Hover.gif">
                 <a target="_blank" tag="tg-social-icon" href="https://t.me/theaterzurblauenstunde">
-                    <img class="social-icons tg" alt="telegram-social-icon" src="../assets/img/telegram/Telegram_website.png">
-                    <img class="social-icons tg gold" alt="telegram-social-icon" src="../assets/img/telegram/Telegram_website_gold.png">
+                    <img class="social-icons tg" alt="telegram-social-icon" src="../assets/img/social/website_telegram.svg">
+                    <img class="social-icons tg gold" alt="telegram-social-icon" src="../assets/img/social/website_telegram_gold.svg">
                 </a>
             </div>
 
             <div class="icon">
                 <img class="flame-hover fb" alt="flame-hover" src="../assets/img/gifs/Flamme_Icon_Hover.gif">
                 <a target="_blank" tag="fb-social-icon" href="https://www.facebook.com/theaterzurblauenstunde/">
-                    <img class="social-icons fb" alt="facebook-social-icon" src="../assets/img/facebook/f_logo_RGB-White_512.png">
-                    <img class="social-icons fb gold" alt="facebook-social-icon" src="../assets/img/facebook/f_logo_RGB-Gold_512.png">
+                    <img class="social-icons fb" alt="facebook-social-icon" src="../assets/img/social/website_facebook.svg">
+                    <img class="social-icons fb gold" alt="facebook-social-icon" src="../assets/img/social/website_facebook_gold.svg">
                 </a>
             </div>
-
-    
 
             <div class="icon">
                 <img class="flame-hover yt" alt="flame-hover" src="../assets/img/gifs/Flamme_Icon_Hover.gif">
                 <a target="_blank" tag="yt-social-icon" href="https://www.youtube.com/channel/UC4h5-kpujSkzAW2fv-g0sXw">
-                    <img class="social-icons yt" alt="youtube-social-icon" src="../assets/img/youtube/yt_icon_mono_dark.png">
-                    <img class="social-icons yt gold" alt="youtube-social-icon" src="../assets/img/youtube/yt_icon_mono_gold.png">
+                    <img class="social-icons yt" alt="youtube-social-icon" src="../assets/img/social/website_youtube.svg">
+                    <img class="social-icons yt gold" alt="youtube-social-icon" src="../assets/img/social/website_youtube_gold.svg">
                 </a>
             </div>
 
             <div class="icon">
                 <img class="flame-hover ig" alt="flame-hover" src="../assets/img/gifs/Flamme_Icon_Hover.gif">
                 <a target="_blank" tag="ig-social-icon" href="https://www.instagram.com/theaterzurblauenstunde/">
-                    <img class="social-icons ig" alt="instagram-social-icon" src="../assets/img/instagram/IG_Glyph_white.png">
-                    <img class="social-icons ig gold" alt="instagram-social-icon" src="../assets/img/instagram/IG_Glyph_gold.png">
+                    <img class="social-icons ig" alt="instagram-social-icon" src="../assets/img/social/website_instagram.svg">
+                    <img class="social-icons ig gold" alt="instagram-social-icon" src="../assets/img/social/website_instagram_gold.svg">
                 </a>
             </div>
 
