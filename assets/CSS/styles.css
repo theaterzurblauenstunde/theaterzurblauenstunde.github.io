@@ -269,7 +269,7 @@ article.special {
     padding: 20px;
 }
 .feature-card img, .feature-card .col-txt {
-    max-width: 270px;
+    width: 270px;
 }
 
 article section p span {
