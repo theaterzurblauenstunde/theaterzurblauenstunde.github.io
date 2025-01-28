@@ -202,7 +202,7 @@ article.daten {
 article > div {
     /*border: 1px solid red; */
     /***DEBUG***/
-    width: 40%;
+    /**width: 40%;**/
     margin: 20px 20px;
 }
 
@@ -220,6 +220,44 @@ main >  article.tickets {
 div.tickets div div.container{
     max-width: 400px;
 }
+
+
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; /* 3 Spalten: Rolle, Schauspieler, Bemerkung */
+    gap: 0;
+    padding-top: 1rem;
+  }
+
+  .grid-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #555;
+    padding-bottom: 0.5rem;
+  }
+
+  .grid-item {
+    padding: 0.5rem 0.5rem ;
+    border-bottom: 1px solid #555;
+  }
+
+  /**.grid-item:last-child {
+    border-bottom: none;
+  }**/
+
+  .grid-item:nth-child(3n-1) {
+    font-weight: bold; /* Schauspieler hervorheben */
+  }
+
+
+  .grid-item:nth-child(3n) {
+    color: #666; /* Bemerkung etwas absetzen */
+    font-size: 0.9rem;
+    
+  }
 
 .ticket-col {
     margin: 0px 0px;
@@ -244,6 +282,7 @@ div.tickets div div.container{
 
 .col-img {
     min-width: 320px;
+    width: 40%;
 }
 
 .col-txt {
@@ -585,6 +624,11 @@ p.impressum {
     .col-txt {
         min-width: 480px;
         width: 40%
+    }
+
+    article > div.besetzung {
+        margin: 20px 40px;
+        width: 990px;
     }
 
     .col-imprint {
