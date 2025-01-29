@@ -33,7 +33,7 @@ body {
 body.start {
     /**overflow: hidden;**/
     height: 100%;
-}
+}w
 
 
 
@@ -668,3 +668,124 @@ p.impressum {
     }
 
 }
+
+
+
+/** Insta Grid **/
+
+.insta-grid {
+    max-width: 935px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /*grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar content content"
+    "footer footer footer";*/
+
+    gap: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .insta-grid {
+       /* grid-template-columns: 1fr;*/
+       gap: 1px;
+    }
+    
+}
+/*
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main-content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}*/
+
+.item {
+    background-color: grey;
+    border-color: black;
+    border-width: 1px;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.item img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    max-height: auto;
+
+    cursor: pointer;
+}
+
+.item figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Unsichtbar standardmäßig */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Unsichtbar */
+    transition: background 0.3s, opacity 0.3s; /* Sanfter Übergang */
+  }
+  
+.overlay p {
+    padding: 0px 16px;
+}
+
+  /* Hover-Effekt */
+  .item:hover .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Halbtransparentes Schwarz */
+    opacity: 1; /* Sichtbar beim Hover */
+    cursor: pointer;
+  }
+  
+  /* Icon oben rechts */
+  .ig-ui {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Hintergrund für bessere Lesbarkeit */
+    color: white;
+    z-index: 2; /* Stellt sicher, dass das Icon oben liegt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Leichter Schatten für mehr Sichtbarkeit */
+  }
+
+  
