@@ -221,12 +221,14 @@ div.tickets div div.container{
     max-width: 400px;
 }
 
-
+.besetzung {
+    width: 100vw;
+}
 
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr; /* 3 Spalten: Rolle, Schauspieler, Bemerkung */
+    grid-template-columns: 3fr 2fr; /* 3 Spalten: Rolle, Schauspieler, Bemerkung */
     gap: 0;
     padding-top: 1rem;
   }
@@ -244,6 +246,11 @@ div.tickets div div.container{
     border-bottom: 1px solid #555;
   }
 
+  .grid-item span {
+    color: #666; /* Bemerkung etwas absetzen */
+    font-size: 0.9rem;
+  }
+
   /**.grid-item:last-child {
     border-bottom: none;
   }**/
@@ -253,10 +260,14 @@ div.tickets div div.container{
   }
 
 
+  .grid-header:nth-child(3n) {
+    display:none;
+  }
+
   .grid-item:nth-child(3n) {
     color: #666; /* Bemerkung etwas absetzen */
     font-size: 0.9rem;
-    
+    display:none; 
   }
 
 .ticket-col {
@@ -667,6 +678,24 @@ p.impressum {
         margin-bottom: 240px;
     }
 
+    .grid {
+        grid-template-columns: 1fr 2fr 3fr; /* 3 Spalten: Rolle, Schauspieler, Bemerkung */
+      }
+
+      .grid-header:nth-child(3n) {
+        display: block;
+      }
+    
+      .grid-item:nth-child(3n) {
+        color: #666; /* Bemerkung etwas absetzen */
+        font-size: 0.9rem;
+        display: block; 
+      }
+
+    .grid-item span {
+        display: none;
+    }
+
 }
 
 
@@ -692,6 +721,9 @@ p.impressum {
     .insta-grid {
        /* grid-template-columns: 1fr;*/
        gap: 1px;
+       max-width: 100vw;
+       padding: 0 !important; 
+       margin: 0 auto !important;
     }
     
 }
@@ -736,6 +768,15 @@ p.impressum {
     cursor: pointer;
 }
 
+.item a {
+    display: block; /* Verhindert, dass das `<a>`-Tag die Höhe verändert */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .item figcaption {
     position: absolute;
     width: 1px;
@@ -755,17 +796,21 @@ p.impressum {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* Unsichtbar standardmäßig */
+    background: rgba(0, 0, 0, 0); 
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0; /* Unsichtbar */
-    transition: background 0.3s, opacity 0.3s; /* Sanfter Übergang */
-  }
-  
+    text-align: center;
+    opacity: 0;
+    transition: background 0.3s, opacity 0.3s;
+}
+
 .overlay p {
-    padding: 0px 16px;
+    margin: 0;
+    padding: 16px;
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
   /* Hover-Effekt */
@@ -782,10 +827,12 @@ p.impressum {
     height: 16px;
     top: 10px;
     right: 10px;
-    background: rgba(0, 0, 0, 0.7); /* Hintergrund für bessere Lesbarkeit */
     color: white;
     z-index: 2; /* Stellt sicher, dass das Icon oben liegt */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Leichter Schatten für mehr Sichtbarkeit */
-  }
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Verhindert ungewollte Größenänderungen */
+}
   
