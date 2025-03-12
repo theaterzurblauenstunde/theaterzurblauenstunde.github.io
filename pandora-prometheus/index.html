@@ -50,56 +50,45 @@
 <!-- Semantische Struktur für Google Rich Snippets -->
     <script type="application/ld+json"> 
         {
-          "@context": "https://schema.org",
-          "@type": "TheaterEvent",
-          "name": "Pandora und Prometheus - Das Lied vom Feuer",
-          "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
-          "keywords": "Oster-Veranstaltungen Berlin, Theater zu Ostern, Berlin Ostern 2025, Osterfeuer Berlin",
-          "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
-          "startDate": "2025-04-19T20:00",
-          "endDate": "2025-05-04T22:15",
-          "location": {
-            "@type": "Place",
-            "name": "Abenteuerzentrum Berlin",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Eichhörnchensteig 3",
-              "addressLocality": "Berlin",
-              "postalCode": "14193",
-              "addressCountry": "DE"
-            }
-          },
-          "organizer": {
-            "@type": "Organization",
-            "name": "Theater zur blauen Stunde e.V.",
-            "url": "https://blauestunde.theater"
-          },
-          "eventStatus": "https://schema.org/EventScheduled",
-          
-          "subEvent": [
-            {
-              "@type": "Event",
-              "name": "Pandora und Prometheus - Das Lied vom Feuer (Erste Vorstellung)",
-              "startDate": "2025-04-19T20:00",
-              "endDate": "2025-04-19T22:00",
-              "location": {
+            "@context": "https://schema.org",
+            "@type": "TheaterEvent",
+            "name": "Pandora und Prometheus - Das Lied vom Feuer",
+            "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
+            "keywords": "Oster-Veranstaltungen Berlin, Theater zu Ostern, Berlin Ostern 2025, Osterfeuer Berlin",
+            "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
+            "startDate": "2025-04-19T20:00",
+            "endDate": "2025-05-04T22:15",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
                 "@type": "Place",
                 "name": "Abenteuerzentrum Berlin",
                 "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Eichhörnchensteig 3",
-                  "addressLocality": "Berlin",
-                  "postalCode": "14193",
-                  "addressCountry": "DE"
+                    "@type": "PostalAddress",
+                    "streetAddress": "Eichhörnchensteig 3",
+                    "addressLocality": "Berlin",
+                    "postalCode": "14193",
+                    "addressCountry": "DE"
                     }
                 },
-              "eventStatus": "https://schema.org/EventScheduled",
-              "offers": [
+            "performer": {
+                "@type": "PerformingGroup",
+                "name": "Theater zur blauen Stunde",
+                "url": "https://blauestunde.theater/ueber"
+              },
+            "organizer": {
+                "@type": "Organization",
+                "name": "Theater zur blauen Stunde e.V.",
+                "url": "https://blauestunde.theater"
+                },
+            "eventStatus": "https://schema.org/EventScheduled",
+            "offers": [
                 {
                 "@type": "Offer",
                 "name": "Normal (Early Bird) – Kategorie A (Vorne)",
                 "price": "20.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 },
@@ -108,6 +97,8 @@
                 "name": "Normal (Early Bird) – Kategorie B (Hinten)",
                 "price": "17.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 },
@@ -116,6 +107,8 @@
                 "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
                 "price": "12.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 },
@@ -124,6 +117,8 @@
                 "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
                 "price": "10.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 },
@@ -132,6 +127,8 @@
                 "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
                 "price": "25.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 },
@@ -140,218 +137,664 @@
                 "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
                 "price": "22.00",
                 "priceCurrency": "EUR",
+                "validFrom": "2025-01-01",
+                "validThrough": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+        
+                {
+                "@type": "Offer",
+                "name": "Normal – Kategorie A (Vorne)",
+                "price": "24.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+                {
+                "@type": "Offer",
+                "name": "Normal – Kategorie B (Hinten)",
+                "price": "21.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+                {
+                "@type": "Offer",
+                "name": "Ermäßigt – Kategorie A (Vorne)",
+                "price": "15.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+                {
+                "@type": "Offer",
+                "name": "Ermäßigt – Kategorie B (Hinten)",
+                "price": "13.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+                {
+                "@type": "Offer",
+                "name": "Unterstützer:innen – Kategorie A (Vorne)",
+                "price": "29.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
+                "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                "availability": "https://schema.org/InStock"
+                },
+                {
+                "@type": "Offer",
+                "name": "Unterstützer:innen – Kategorie B (Hinten)",
+                "price": "27.00",
+                "priceCurrency": "EUR",
+                "validFrom": "2025-04-01",
                 "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
                 "availability": "https://schema.org/InStock"
                 }
+            ],
+            
+            "subEvent": [
+            {
+                "@type": "Event",
+                "name": "Pandora und Prometheus - Das Lied vom Feuer (Erste Vorstellung)",
+                "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
+                "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
+                "startDate": "2025-04-19T20:00",
+                "endDate": "2025-04-19T22:00",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "location": {
+                    "@type": "Place",
+                    "name": "Abenteuerzentrum Berlin",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Eichhörnchensteig 3",
+                        "addressLocality": "Berlin",
+                        "postalCode": "14193",
+                        "addressCountry": "DE"
+                        }
+                    },
+                "performer": {
+                    "@type": "PerformingGroup",
+                    "name": "Theater zur blauen Stunde",
+                    "url": "https://blauestunde.theater/ueber"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Theater zur blauen Stunde e.V.",
+                    "url": "https://blauestunde.theater"
+                },
+                "eventStatus": "https://schema.org/EventScheduled",
+                "offers": [
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie A (Vorne)",
+                    "price": "20.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie B (Hinten)",
+                    "price": "17.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
+                    "price": "12.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
+                    "price": "10.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
+                    "price": "25.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
+                    "price": "22.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+        
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie A (Vorne)",
+                    "price": "24.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie B (Hinten)",
+                    "price": "21.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie A (Vorne)",
+                    "price": "15.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie B (Hinten)",
+                    "price": "13.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie A (Vorne)",
+                    "price": "29.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie B (Hinten)",
+                    "price": "27.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299191/",
+                    "availability": "https://schema.org/InStock"
+                    }
                 ]
             },
             {
                 "@type": "Event",
                 "name": "Pandora und Prometheus - Das Lied vom Feuer (Zweite Vorstellung)",
+                "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
+                "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
                 "startDate": "2025-04-20T20:00",
                 "endDate": "2025-04-20T22:00",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {
                     "@type": "Place",
                     "name": "Abenteuerzentrum Berlin",
                     "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "Eichhörnchensteig 3",
-                      "addressLocality": "Berlin",
-                      "postalCode": "14193",
-                      "addressCountry": "DE"
+                        "@type": "PostalAddress",
+                        "streetAddress": "Eichhörnchensteig 3",
+                        "addressLocality": "Berlin",
+                        "postalCode": "14193",
+                        "addressCountry": "DE"
                         }
                     },
+                "performer": {
+                    "@type": "PerformingGroup",
+                    "name": "Theater zur blauen Stunde",
+                    "url": "https://blauestunde.theater/ueber"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Theater zur blauen Stunde e.V.",
+                    "url": "https://blauestunde.theater"
+                },
                 "eventStatus": "https://schema.org/EventScheduled",
                 "offers": [
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie A (Vorne)",
-                  "price": "20.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie B (Hinten)",
-                  "price": "17.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
-                  "price": "12.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
-                  "price": "10.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
-                  "price": "25.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
-                  "price": "22.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
-                  "availability": "https://schema.org/InStock"
-                  }
-                  ]
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie A (Vorne)",
+                    "price": "20.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie B (Hinten)",
+                    "price": "17.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
+                    "price": "12.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
+                    "price": "10.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
+                    "price": "25.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
+                    "price": "22.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+        
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie A (Vorne)",
+                    "price": "24.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie B (Hinten)",
+                    "price": "21.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie A (Vorne)",
+                    "price": "15.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie B (Hinten)",
+                    "price": "13.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie A (Vorne)",
+                    "price": "29.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie B (Hinten)",
+                    "price": "27.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    }
+                ]
             },
             {
                 "@type": "Event",
                 "name": "Pandora und Prometheus - Das Lied vom Feuer (Dritte Vorstellung)",
+                "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
+                "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
                 "startDate": "2025-05-03T20:15",
                 "endDate": "2025-05-03T22:15",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {
                     "@type": "Place",
                     "name": "Abenteuerzentrum Berlin",
                     "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "Eichhörnchensteig 3",
-                      "addressLocality": "Berlin",
-                      "postalCode": "14193",
-                      "addressCountry": "DE"
+                        "@type": "PostalAddress",
+                        "streetAddress": "Eichhörnchensteig 3",
+                        "addressLocality": "Berlin",
+                        "postalCode": "14193",
+                        "addressCountry": "DE"
                         }
+                    },
+                "performer": {
+                    "@type": "PerformingGroup",
+                    "name": "Theater zur blauen Stunde",
+                    "url": "https://blauestunde.theater/ueber"
+                    },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Theater zur blauen Stunde e.V.",
+                    "url": "https://blauestunde.theater"
                     },
                 "eventStatus": "https://schema.org/EventScheduled",
                 "offers": [
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie A (Vorne)",
-                  "price": "20.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie B (Hinten)",
-                  "price": "17.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
-                  "price": "12.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
-                  "price": "10.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
-                  "price": "25.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
-                  "price": "22.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
-                  "availability": "https://schema.org/InStock"
-                  }
-                  ]
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie A (Vorne)",
+                    "price": "20.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie B (Hinten)",
+                    "price": "17.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
+                    "price": "12.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
+                    "price": "10.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
+                    "price": "25.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
+                    "price": "22.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+        
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie A (Vorne)",
+                    "price": "24.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299192/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie B (Hinten)",
+                    "price": "21.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie A (Vorne)",
+                    "price": "15.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie B (Hinten)",
+                    "price": "13.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie A (Vorne)",
+                    "price": "29.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie B (Hinten)",
+                    "price": "27.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299193/",
+                    "availability": "https://schema.org/InStock"
+                    }
+                ]
             },
             {
                 "@type": "Event",
                 "name": "Pandora und Prometheus - Das Lied vom Feuer (Letzte Vorstellung)",
+                "description": "Erlebt 'Pandora und Prometheus - Das Lied vom Feuer' mit verschiedenen Ticketoptionen.",
+                "image": "https://blauestunde.theater/assets/img/fotos/Pandora-und-Prometheus_square-20251920-1x.webp",
                 "startDate": "2025-05-04T20:15",
                 "endDate": "2025-05-04T22:15",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {
                     "@type": "Place",
                     "name": "Abenteuerzentrum Berlin",
                     "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "Eichhörnchensteig 3",
-                      "addressLocality": "Berlin",
-                      "postalCode": "14193",
-                      "addressCountry": "DE"
+                        "@type": "PostalAddress",
+                        "streetAddress": "Eichhörnchensteig 3",
+                        "addressLocality": "Berlin",
+                        "postalCode": "14193",
+                        "addressCountry": "DE"
                         }
+                    },
+                "performer": {
+                    "@type": "PerformingGroup",
+                    "name": "Theater zur blauen Stunde",
+                    "url": "https://blauestunde.theater/ueber"
+                    },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Theater zur blauen Stunde e.V.",
+                    "url": "https://blauestunde.theater"
                     },
                 "eventStatus": "https://schema.org/EventScheduled",
                 "offers": [
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie A (Vorne)",
-                  "price": "20.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Normal (Early Bird) – Kategorie B (Hinten)",
-                  "price": "17.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
-                  "price": "12.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
-                  "price": "10.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
-                  "price": "25.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  },
-                  {
-                  "@type": "Offer",
-                  "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
-                  "price": "22.00",
-                  "priceCurrency": "EUR",
-                  "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
-                  "availability": "https://schema.org/InStock"
-                  }
-                  ]
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie A (Vorne)",
+                    "price": "20.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal (Early Bird) – Kategorie B (Hinten)",
+                    "price": "17.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie A (Vorne)",
+                    "price": "12.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt (Early Bird) – Kategorie B (Hinten)",
+                    "price": "10.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie A (Vorne)",
+                    "price": "25.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen (Early Bird) – Kategorie B (Hinten)",
+                    "price": "22.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+        
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie A (Vorne)",
+                    "price": "24.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Normal – Kategorie B (Hinten)",
+                    "price": "21.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie A (Vorne)",
+                    "price": "15.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Ermäßigt – Kategorie B (Hinten)",
+                    "price": "13.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie A (Vorne)",
+                    "price": "29.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    },
+                    {
+                    "@type": "Offer",
+                    "name": "Unterstützer:innen – Kategorie B (Hinten)",
+                    "price": "27.00",
+                    "priceCurrency": "EUR",
+                    "validFrom": "2025-04-01",
+                    "url": "https://pretix.eu/blauestunde/p-p-2025/4299194/",
+                    "availability": "https://schema.org/InStock"
+                    }
+                ]
             }
             
-          ]
-        }
+            ]
+        }        
         </script>
 
 </head>
