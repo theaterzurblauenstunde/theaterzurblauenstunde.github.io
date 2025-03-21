@@ -20,6 +20,67 @@ main article p strong {
     font-size: 1.2em;
 }
 
+.attention {
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 900;
+    color: lightgreen;
+    animation: pulse 0.55s infinite alternate ease-in-out;
+    text-shadow: 
+        -2px -2px 0 black, /* Oben links */
+         2px -2px 0 black, /* Oben rechts */
+        -2px  2px 0 black, /* Unten links */
+         2px  2px 0 black, /* Unten rechts */
+        -2px  0px 0 black, /* Links */
+         2px  0px 0 black, /* Rechts */
+         0px -2px 0 black, /* Oben */
+         0px  2px 0 black; /* Unten */
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.97);
+    }
+    100% {
+        transform: scale(1.02);
+    }
+}
+
+.ticket-col {
+    position: relative;
+     /* Stellt sicher, dass das span-Element relativ dazu verschoben werden kann */
+}
+
+.ticket-col span {
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 900;
+    color: lightgreen;
+
+    text-shadow: 
+        -2px -2px 0 black, /* Oben links */
+         2px -2px 0 black, /* Oben rechts */
+        -2px  2px 0 black, /* Unten links */
+         2px  2px 0 black, /* Unten rechts */
+        -2px  0px 0 black, /* Links */
+         2px  0px 0 black, /* Rechts */
+         0px -2px 0 black, /* Oben */
+         0px  2px 0 black; /* Unten */
+
+    
+    animation: pulse 0.55s infinite alternate ease-in-out;
+    position: absolute;
+    
+    /* Manuelle Verschiebung */
+    top: -54px;  /* Nach oben */
+    right: -12px;  /* Nach rechts */
+
+    /* Rotation */
+    transform: rotate(-10deg);
+    transform-origin: center;  /* Optional, falls du den Ursprung der Rotation anpassen möchtest */
+
+}
 
 h3 {
     margin: inherit;
@@ -263,5 +324,23 @@ textarea {
         margin-bottom: 0px;
     }
 
+    .ticket-col span {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        top: -24px;  /* Nach oben */
+        right: -12px;  /* Nach rechts */
+    }
+
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+    .ticket-col span {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        top: -24px;  /* Nach oben */
+        right: -32px;  /* Nach rechts */
+    }
 
 }

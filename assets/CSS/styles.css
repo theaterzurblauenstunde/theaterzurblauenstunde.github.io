@@ -341,6 +341,11 @@ article section p span {
 
 }
 
+.container p span {
+    font-weight: bold;
+    color: lightpink;
+}
+
 figure {
     width: 40%;
 }
