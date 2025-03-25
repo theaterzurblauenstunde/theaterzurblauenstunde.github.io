@@ -106,18 +106,61 @@ div.start {
     
 }
 
+.banner {
+    position: relative;
+    overflow: hidden; /* Verhindert das Herausragen des Bildes */
+    width: 100%; /* Das Bild soll immer die volle Breite des Containers einnehmen */
+}
+
 
 #banner .banner img {
     height: 100%;
     width: 100%;
+    object-fit: cover; /* Bild wird beschnitten, um den Container vollständig zu füllen */
+    object-position: center; /* Bild wird zentriert (linke und rechte Seiten werden abgeschnitten) */
+    display: block; /* Verhindert zusätzlichen Abstand unter dem Bild */
 }
 
-#banner a {
+/* Spezifische Einstellungen für kleinere Bildschirme (Mobile) */
+@media (max-width: 767px) {
+    .banner {
+        height: 320px; /* Hier legen wir fest, dass die Höhe des Containers gleich der Bildschirmhöhe ist */
+    }
+
+    .banner-img {
+        object-fit: cover;    /* Bild wird beschnitten, aber behält die Höhe */
+        object-position: center; /* Bild bleibt zentriert */
+    }
+}
+
+/* Kleiner Play-Button */
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
-      transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-Effekt */
+.play-button:hover {
+    background-color: darkred;
+}
+
+/* Icon-Größe */
+.play-button i {
+    font-size: 24px;
 }
     
 /*** VIDEO ***/
@@ -519,7 +562,7 @@ span.desktop {
 
     .small-logo img {
         width: 70px;
-        height: auto;
+        height: 70px;
     }
 
     .ticket-col {
