@@ -445,7 +445,11 @@ span.desktop {
     display: none;
 }
 
-
+@media (max-width: 768px) {
+    #bgvid {
+        display: none;
+    }
+}
 
 /**ICON BAR**/
 
